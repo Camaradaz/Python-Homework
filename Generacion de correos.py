@@ -1,7 +1,7 @@
 usuarios = []
 usuarios_asteriscos = []
  
-cantidad = int(input("Ingrese la cantidad de usuarios de la Academia Club del Código: "))
+cantidad = int(input("Ingrese la cantidad de usuarios de la universidad: "))
  
 for x in range(cantidad):
     nombre = input("Ingrese nombre: ")
@@ -9,7 +9,7 @@ for x in range(cantidad):
     #usuarios.append((nombre,apellido))
     contrasena = input("Ingrese una contraseña, la cuál debe tener 8 ó más caracteres: ")
  
-    mail = (nombre.lower()[0]+apellido.lower()+"@clubdelcodigo.com.ar")
+    mail = (nombre.lower()[0]+apellido.lower()+"@undav.com")
  
     usuarios.append(("Usuario: "+nombre + " " + apellido + " - " + "Mail: " + mail + " - " + "Contraseña: " + contrasena))
     usuarios_asteriscos.append(("Usuario: " + nombre + " " + apellido  + " - " + "Mail: " + mail + " - " + "Contraseña: ",len(contrasena)*"*"))
